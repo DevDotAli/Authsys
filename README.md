@@ -4,8 +4,7 @@
 
 # Authsys
 
-A brief description of what this project does and who it's for
-
+A nice and easy to understand Signup, login authentication template repo.
 
 ## Deployment
 
