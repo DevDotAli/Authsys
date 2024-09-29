@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class=" flex w-full h-screen bg-zinc-900 items-center justify-center flex-col">
+        <div class="bg-transparent text-white font-mono font-extrabold text-3xl	 ">Welcome to Auth.sys</div>
+        <div>
+          <button onclick="signupRedirect()" class="bg-blue-500 text-white my-5 mx-3 rounded-md px-5 py-2 font-bold">Sign up</button>
+          <button onclick="loginRedirect()" class=" bg-blue-500 text-white my-5 mx-3 rounded-md px-6 py-2 font-bold">Login</button>
+        
+      </div>
+    </div>
+    <script>
+      function loginRedirect() {
+        window.location.href = '/login';
+      }
+      function signupRedirect(){
+        window.location.href = '/signup';
+      }
+    </script>
+</body>
+</html>

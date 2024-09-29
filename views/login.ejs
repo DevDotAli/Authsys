@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex w-full h-screen font-mono bg-zinc-900 items-center justify-center">
+        <div class="">
+            <div class=" text-white font-extrabold text-3xl flex items-center justify-center">LogIn Your Account</div>
+            <form class="text-white flex flex-col items-center justify-center" method="post" action="/logcheck">
+                <input class="bg-zinc-800 outline-none rounded-md my-3 px-5 py-3" type="email" placeholder="email"
+                    name="email"  required>
+                <input class="bg-zinc-800 outline-none rounded-md my-3 px-5 py-3" type="password" placeholder="password"
+                    name="password" required>
+                <a class=" text-blue-400" onclick="signupRedirect()" href="/signup">create one</a>
+                <input class="bg-blue-500 outline-none rounded-md my-3 px-3 py-3" type="submit" value="LogIn">
+            </form>
+        </div>
+    </div>
+    <script>
+        function signupRedirect() {
+          window.location.href = '/login';
+        }
+        if (session.errorMessage) {
+    // Display the error message
+    delete session.errorMessage;
+}
+      </script>
+</body>
+
+</html>
