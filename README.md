@@ -29,6 +29,12 @@ To start project type :
 ```bash
   npx nodemon
 ```
+## Next Updates
+
+-  connect-flash (sending data from server to profile)
+-  Authsys mySQL version
+-  AUthsys Postgres version
+
 ## Authors
 
 - [@DevDotAli](https://github.com/DevDotAli)
